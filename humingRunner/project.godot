@@ -16,12 +16,19 @@ _global_script_class_icons={
 [application]
 
 config/name="humingRunner"
+run/main_scene="res://scenes/cursor.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=720
 window/size/height=1280
+window/size/borderless=true
+window/vsync/use_vsync=false
+
+[physics]
+
+2d/default_gravity_vector=Vector2( 0, 0 )
 
 [rendering]
 
