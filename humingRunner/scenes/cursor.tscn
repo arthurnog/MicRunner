@@ -17,3 +17,4 @@ shape = SubResource( 1 )
 [node name="Polygon2D" type="Polygon2D" parent="kinect"]
 color = Color( 0.769531, 0.252502, 0.252502, 1 )
 polygon = PoolVector2Array( -60.308, -55.0756, -60.308, 55.7992, 62.5532, 55.7992, 62.5532, -55.0756 )
+[connection signal="input_event" from="kinect" to="kinect" method="_input_event"]
