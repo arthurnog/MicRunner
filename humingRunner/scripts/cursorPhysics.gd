@@ -29,14 +29,14 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("ui_down"):
 		position.y += speed
 	else:
-		if position.y < 620:
+		if position.y < 640:
 			vel.y += grav*delta
 			motion = vel*delta
 			
-		elif position.y > 620:
+		elif position.y > 640:
 			vel.y -= grav*delta
 			motion = vel*delta
-		else:
+		elif position.y == 640:
 			vel.y = 0
 			motion.y = 0
 	position += motion
