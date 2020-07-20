@@ -1,7 +1,8 @@
-extends KinematicBody2D
+extends Area2D
 
 var vel = Vector2(0,0)
 var motion = Vector2(0,0)
+var maxMov = 400
 const grav = 1000
 const speed = 2
 
@@ -21,24 +22,29 @@ func _process(delta):
 func _physics_process(delta):
 	#a movimentação será em torno de um ponto fixo como um centro gravitacional
 	#quando o cursor se afasta ele quer voltar para o centro
-	
-	#problemas para amortecer o movimento
-	
+	if position.y <= 640 - maxMov:
+			position.y = 640 - maxMov
+	if position.y >= 640 + maxMov:
+			position.y = 640 + maxMov
 	if Input.is_action_pressed("ui_up"):
 		position.y -= speed
+			
 	elif Input.is_action_pressed("ui_down"):
 		position.y += speed
 	else:
 		if position.y < 640:
 			vel.y += grav*delta
 			motion = vel*delta
+			position += motion
+			if position.y >=640:
+				position.y = 640
 			
 		elif position.y > 640:
 			vel.y -= grav*delta
 			motion = vel*delta
-		elif position.y == 640:
-			vel.y = 0
-			motion.y = 0
-	position += motion
+			position += motion
+			if position.y <=640:
+				position.y = 640
+		
 func _input_event(viewport, event, shape_idx):
 	pass
