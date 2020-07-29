@@ -4,19 +4,12 @@ var vel = Vector2(0,0)
 var motion = Vector2(0,0)
 var maxMov = 400
 const grav = 1000
-const speed = 2
+const speed = 15
 
 func _ready():
 	pass # Replace with function body.
 
 func _process(delta):
-	#if position.y > 620:
-	#	vel.y -= (position.y - 620)*0.1
-	#elif position.y < 620:
-	#	vel.y -= (620 - position.y)*0.1
-	#else:
-	#	vel.y = 0
-	#position += vel*delta
 	pass
 	
 func _physics_process(delta):
