@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/ladrilho.gd" type="Script" id=1]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( -0.307129, -54.552 )
+b = Vector2( 1.93781, 55.4492 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="portal" type="Area2D" parent="."]
+
+[node name="score" type="CollisionShape2D" parent="portal"]
+scale = Vector2( 1, 2 )
+shape = SubResource( 1 )
+
+[node name="portal" type="Polygon2D" parent="portal"]
+position = Vector2( 0.661044, 1.16431 )
+scale = Vector2( 2.1579, 2.30243 )
+color = Color( 0.721569, 0.8, 1, 1 )
+offset = Vector2( 6.056, 0 )
+polygon = PoolVector2Array( -5.41791, -48.2939, -5.41791, 48.2378, 4.37063, 48.2471, 4.49126, -48.2801 )
+[connection signal="body_entered" from="portal" to="." method="_on_portal_body_entered"]
