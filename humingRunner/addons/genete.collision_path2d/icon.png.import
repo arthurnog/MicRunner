@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-d08f88ab970ae3ae652f1dcac509a093.stex"
+path="res://.import/icon.png-d6a1e2413144b67e54286b328b78759c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://collision_path_2d-1.0/addons/genete.collision_path2d/icon.png"
-dest_files=[ "res://.import/icon.png-d08f88ab970ae3ae652f1dcac509a093.stex" ]
+source_file="res://addons/genete.collision_path2d/icon.png"
+dest_files=[ "res://.import/icon.png-d6a1e2413144b67e54286b328b78759c.stex" ]
 
 [params]
 

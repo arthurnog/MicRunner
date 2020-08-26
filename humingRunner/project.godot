@@ -25,6 +25,10 @@ window/size/width=720
 window/size/height=1280
 window/vsync/use_vsync=false
 
+[editor_plugins]
+
+enabled=PoolStringArray( "genete.collision_path2d" )
+
 [physics]
 
 2d/default_gravity_vector=Vector2( 0, 0 )
