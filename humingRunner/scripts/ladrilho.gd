@@ -15,5 +15,9 @@ func _process(delta):
 		if position.x < -100:
 			queue_free()
 
-func _on_portal_body_entered(body):
+
+	
+
+
+func _on_portal_area_entered(area):
 	game.countScore()

@@ -21,4 +21,4 @@ scale = Vector2( 2.1579, 2.30243 )
 color = Color( 0.721569, 0.8, 1, 1 )
 offset = Vector2( 6.056, 0 )
 polygon = PoolVector2Array( -5.41791, -48.2939, -5.41791, 48.2378, 4.37063, 48.2471, 4.49126, -48.2801 )
-[connection signal="body_entered" from="portal" to="." method="_on_portal_body_entered"]
+[connection signal="area_entered" from="portal" to="." method="_on_portal_area_entered"]
