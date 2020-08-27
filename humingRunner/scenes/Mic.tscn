@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="AudioStreamMicrophone" id=1]
+
+[node name="Mic" type="Control"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamRec" type="AudioStreamPlayer" parent="."]
+stream = SubResource( 1 )
