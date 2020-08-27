@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="humingRunner"
-run/main_scene="res://scenes/cursor.tscn"
+run/main_scene="res://scenes/GAME.tscn"
 config/icon="res://icon.png"
 
 [display]

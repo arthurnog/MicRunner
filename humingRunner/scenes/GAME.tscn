@@ -16,11 +16,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="cursor" parent="." instance=ExtResource( 2 )]
-
 [node name="spawn" type="Node2D" parent="."]
 script = ExtResource( 3 )
 
 [node name="Timer" type="Timer" parent="spawn"]
 autostart = true
+
+[node name="cursor" parent="." instance=ExtResource( 2 )]
 [connection signal="timeout" from="spawn/Timer" to="spawn" method="_on_Timer_timeout"]
